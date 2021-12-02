@@ -356,10 +356,28 @@ img {
   padding: 16px 12px;
   margin-top: 4px;
 }
-.modal-input-icon {
+.modal-input-people-icon {
   fill: currentColor;
+  position: absolute;
+  left: 55px;
+  top: 111px;
+  width: 12px;
+  height: 12px;
 }
-
+.modal-input-smartphone-icon {
+  position: absolute;
+  left: 54.27px;
+  top: 183px;
+  width: 13px;
+  height: 13px;
+}
+.modal-input-envelope-icon {
+  position: absolute;
+  left: 53.5px;
+  top: 256px;
+  width: 15px;
+  height: 12px;
+}
 /* Гарантии */
 .description {
   background-color: #ffffff;
@@ -596,7 +614,9 @@ img {
   padding-bottom: 60px;
   height: 252px;
 }
-
+.footer-div {
+  height: 132px;
+}
 .footer-address {
   padding-top: 20px;
 }
@@ -673,9 +693,9 @@ img {
   color: #ffffff;
 }
 .footer-icon-div {
-  margin-top: -124px;
-  padding-left: 301px;
   fill: currentColor;
+  width: 206px;
+  height: 80px;
 }
 
 /* PORTFOLIO-HTML */
