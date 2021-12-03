@@ -97,6 +97,7 @@ img {
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-icon:focus,
 .header-icon:hover {
   color: #2196f3;
 }
@@ -285,6 +286,10 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 4px;
+}
+.modal-input:hover,
+.modal-input:focus {
+  border-color: #2196f3;
 }
 .modal-label {
   font-style: normal;
@@ -748,11 +753,12 @@ img {
   padding-left: 29px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-input-btn:hover,
+.footer-input-btn :focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .footer-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-}
-.footer-input-btn:hover .footer-input-btn :focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer-input-icon {
   margin-left: 10px;
