@@ -104,9 +104,14 @@
                              ></textarea>
                                 
                              <div class="modal-checkbox-div">
-                             <input type="checkbox" name="checkbox" value="done" class="modal-checkbox">
+                             <input 
+                             type="checkbox" 
+                             name="checkbox" 
+                             value="done" 
+                             class="modal-checkbox"
+                             required>
                              <label for="" class="modal-checkbox-label">
-                                Соглашаюсь с рассылкой и принимаю <span class="checkbox-label-blue">Условия договора</span>
+                                Соглашаюсь с рассылкой и принимаю <a href="index.html" class="checkbox-link">Условия договора</a>
                              </label>
                             </div>
                             <div class="modal-submit-btn-div">
@@ -422,8 +427,9 @@
     </main>
     <!---   Футер    -->
     <footer class="footer">
-        <div class="footer-div container">
-            <span class="footer-logo"><a href="index.html" class="logo link">Web</a><a class="logo-footer-studio link"
+    <div class="footer-div container">
+        <div class="footer-div-address">   
+          <span class="footer-logo"><a href="index.html" class="logo link">Web</a><a class="logo-footer-studio link"
                     href="index.html">Studio</a></span>
             <address class="footer-address">
                 <ul class="footer-list list">
@@ -437,7 +443,7 @@
                 </ul>
             </address>
         </div>
-        <div class="footer-icon-div container">
+        <div class="footer-icon-div">
             <h3 class="footer-h3">
                 ПРИСОЕДИНАЙТЕСЬ
             </h3>
@@ -472,6 +478,21 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-input-div">
+            <h3 class="footer-input-h3">Подпишитесь на рассылку</h3>
+         <form action="" class="footer-input-form">
+            <input 
+                type="email" 
+                class="footer-input"
+                name="user-email"
+                placeholder="E-mail"></input>
+                <button class="footer-input-btn btn" type="submit">Подписаться</button>
+         </form>
+         <svg class="footer-input-svg">
+             <use href="./images/icons.svg#"></use>
+         </svg>
+        </div>
+    </div>
     </footer>
     <script src="./js/modal.js"></script>
 </body>
