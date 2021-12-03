@@ -754,7 +754,9 @@ img {
 .footer-input-btn:hover .footer-input-btn :focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
+.footer-input-icon {
+  margin-left: 10px;
+}
 /* PORTFOLIO-HTML */
 
 /* Главный контент */
