@@ -275,17 +275,18 @@ img {
 }
 .modal-form {
 }
+
 .modal-input {
-  width: 448px;
-  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 4px;
+  cursor: pointer;
+  width: 448px;
+  height: 40px;
 }
 .modal-input:hover,
 .modal-input:focus {
@@ -348,6 +349,23 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.modal-checkbox-label::before {
+  content: "";
+  display: block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  display: block;
+  border: 0.2px solid #000000;
+}
+.modal-checkbox:checked + .modal-checkbox-label::before {
+  background-image: url(../images/checkbox.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
 .checkbox-link {
   color: #2196f3;
 }
@@ -364,27 +382,35 @@ img {
 .modal-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-input-svg-div {
+  position: relative;
+  height: 40px;
+  margin-bottom: 10px;
+}
 .modal-input-people-icon {
   fill: currentColor;
   position: absolute;
-  left: 55px;
-  top: 111px;
   width: 12px;
   height: 12px;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-25%);
 }
 .modal-input-smartphone-icon {
   position: absolute;
-  left: 54.27px;
-  top: 183px;
   width: 13px;
   height: 13px;
+  top: 50%;
+  transform: translateY(-25%);
+  left: 14.27px;
 }
 .modal-input-envelope-icon {
   position: absolute;
-  left: 53.5px;
-  top: 256px;
+  top: 50%;
+  transform: translateY(-25%);
   width: 15px;
   height: 12px;
+  left: 13.5px;
 }
 /* Гарантии */
 .description {

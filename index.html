@@ -77,25 +77,42 @@
                         <h2 class="modal-h2">Оставьте свои данные, мы вам перезвоним</h2>
                         <form action="#" class="modal-form" >
                             <label class="modal-label">Имя</label>
-                            <input 
-                            type="text" 
-                            class="modal-input"
-                            required
-                            name="user-name"
-                            >
+                        <div class="modal-input-svg-div">
+                              <input 
+                              type="text" 
+                              class="modal-input"
+                              name="user-name"
+                              required
+                              >
+                            <svg class="modal-input-people-icon">
+                              <use 
+                                href="./images/icons.svg#icon-People" width="12" height="12">
+                              </use>
+                            </svg>
+                        </div>
                             <label class="modal-label">Телефон</label>
+                        <div class="modal-input-svg-div">
                             <input 
                             type="tel"
                             class="modal-input"
                             required
                            name="user-tel" 
                             >
+                            <svg class="modal-input-smartphone-icon">
+                                <use href="./images/icons.svg#modal-smartphone" width="13" height="13"></use>
+                            </svg>
+                        </div>
                             <label class="modal-label">Почта</label>
+                        <div class="modal-input-svg-div">
                             <input
                              type="email" 
                              class="modal-input"
                              name="user-email"
                              >
+                               <svg class="modal-input-envelope-icon">
+                                   <use href="./images/icons.svg#modal-envelope" width="15" height="12"></use>
+                               </svg>
+                        </div>
                             <label class="modal-label">Комментарий</label>
                              <textarea 
                              class="modal-textarea"
@@ -110,7 +127,7 @@
                              value="done" 
                              class="modal-checkbox"
                              required>
-                             <label for="" class="modal-checkbox-label">
+                             <label for="modal-checkbox" class="modal-checkbox-label">
                                 Соглашаюсь с рассылкой и принимаю <a href="index.html" class="checkbox-link">Условия договора</a>
                              </label>
                             </div>
@@ -118,15 +135,7 @@
                                 <button type="submit" class="modal-submit-btn btn">Отправить</button>
                             </div>
                             </form>
-                            <svg class="modal-input-people-icon">
-                                <use href="./images/icons.svg#icon-People" width="12" height="12"></use>
-                            </svg>
-                            <svg class="modal-input-smartphone-icon">
-                                <use href="./images/icons.svg#modal-smartphone" width="13" height="13"></use>
-                            </svg>
-                            <svg class="modal-input-envelope-icon">
-                                <use href="./images/icons.svg#modal-envelope" width="15" height="12"></use>
-                            </svg>
+                            
                     </div>
 
                 </div>
