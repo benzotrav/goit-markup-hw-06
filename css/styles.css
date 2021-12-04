@@ -283,13 +283,16 @@ img {
   padding-left: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-top: 4px;
   cursor: pointer;
   width: 100%;
   height: 40px;
   outline: none;
 }
-.modal-input:hover,
+
+.modal-input:focus + .modal-input-people-icon {
+  fill: #2196f3;
+}
+
 .modal-input:focus {
   border-color: #2196f3;
 }
@@ -390,6 +393,7 @@ img {
   height: 40px;
   margin-bottom: 10px;
   width: 448px;
+  margin-top: 4px;
 }
 .modal-input-people-icon {
   fill: currentColor;
@@ -398,20 +402,20 @@ img {
   height: 12px;
   top: 50%;
   left: 15px;
-  transform: translateY(-25%);
+  transform: translateY(-50%);
 }
 .modal-input-smartphone-icon {
   position: absolute;
   width: 13px;
   height: 13px;
   top: 50%;
-  transform: translateY(-25%);
+  transform: translateY(-50%);
   left: 14.27px;
 }
 .modal-input-envelope-icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-25%);
+  transform: translateY(-50%);
   width: 15px;
   height: 12px;
   left: 13.5px;
