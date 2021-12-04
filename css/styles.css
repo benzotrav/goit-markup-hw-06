@@ -402,6 +402,12 @@ img {
   margin-top: 4px;
   outline: none;
   resize: none;
+  cursor: pointer;
+}
+.modal-textarea:focus,
+.modal-textarea:hover {
+  border-color: #2196f3;
+
 }
 .modal-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
