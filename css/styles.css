@@ -95,12 +95,8 @@ img {
 }
 .header-icon {
   margin-right: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-icon:focus,
-.header-icon:hover {
-  color: #2196f3;
-}
+
 .header-li {
   margin-right: 50px;
   cursor: pointer;
@@ -288,11 +284,24 @@ img {
   height: 40px;
   outline: none;
 }
-
-.modal-input:focus + .modal-input-people-icon {
-  fill: #2196f3;
+.test {
+  height: 12px;
+  width: 34px;
+  border: 2px solid #000000;
+  margin-left: 250px;
 }
-
+.modal-input:focus + .modal-input-people-icon {
+  border-color: #188ce8;
+  color: #2196f3;
+}
+.modal-input:focus + .modal-input-smartphone-icon {
+  border-color: #188ce8;
+  color: #2196f3;
+}
+.modal-input:focus + .modal-input-envelope-icon {
+  border-color: #188ce8;
+  color: #2196f3;
+}
 .modal-input:focus {
   border-color: #2196f3;
 }
@@ -396,6 +405,7 @@ img {
   margin-top: 4px;
 }
 .modal-input-people-icon {
+  color: #212121
   fill: currentColor;
   position: absolute;
   width: 12px;
@@ -411,6 +421,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 14.27px;
+  fill: currentColor;
 }
 .modal-input-envelope-icon {
   position: absolute;
