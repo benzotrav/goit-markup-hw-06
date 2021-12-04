@@ -379,6 +379,8 @@ img {
   margin-bottom: 20px;
   padding: 16px 12px;
   margin-top: 4px;
+  outline: none;
+  resize: none;
 }
 .modal-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
