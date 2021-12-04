@@ -295,12 +295,7 @@ img {
   width: 100%;
   height: 40px;
   outline: none;
-}
-.test {
-  height: 12px;
-  width: 34px;
-  border: 2px solid #000000;
-  margin-left: 250px;
+  transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-input:focus + .modal-input-people-icon {
   border-color: #188ce8;
@@ -352,12 +347,9 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-checkbox-div {
-  width: 423px;
+  width: 429px;
   height: 24px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   margin-bottom: 30px;
 }
 .modal-checkbox {
@@ -366,19 +358,26 @@ img {
   margin-right: 6px;
 }
 .modal-checkbox-label {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  align-items: center;
+  display: flex;
+  width: 429px;
+
+}
+
+.checkbox-link {
+  color: #2196f3;
 }
 .modal-checkbox-label::before {
   content: "";
   display: block;
-  margin-right: 7px;
   width: 16px;
+  margin-right: 8.38px;
   height: 15px;
   border-radius: 2px;
   display: block;
@@ -390,9 +389,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
-}
-.checkbox-link {
-  color: #2196f3;
 }
 .modal-textarea {
   width: 448px;
@@ -425,6 +421,8 @@ img {
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-input-smartphone-icon {
   position: absolute;
@@ -433,7 +431,8 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 14.27px;
-  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-input-envelope-icon {
   position: absolute;
@@ -442,6 +441,8 @@ img {
   width: 15px;
   height: 12px;
   left: 13.5px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 /* Гарантии */
 .description {
